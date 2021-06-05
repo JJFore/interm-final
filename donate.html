@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Donations</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipients.html">Recipients</a></li>
+            </ul>
+        </div>
+
+        <div id="logo">
+            <img src="images/joined-hands.jpg" alt="Circle of Joined Hands" width="160" height="160"/>
+        </div>
+
+        <div class="right">                 
+            <ul>
+                <li><a href="sponsorship.html">Sponsorship</a></li>   
+                <li><a href="donate.html">Donations</a></li>
+                 <!--consider adding table for sponsorship form
+                add a table bronze, silver donars, gold...-->
+            </ul>
+
+        </div>
+    </header>
+    
+    <div>
+    <form method="POST" action="mailto:me@mymail.com" enctype="text/plain"> <!--Change action, add CVC to html, styling-->
+        <table>
+            <tr>
+                <td>Please enter name: <input type="text" name="name" id="name" size="20"></td>
+                    
+               
+            </tr>
+            <tr>
+                <td>Billing Address: Street<input type="text" name="street" id="street" size="30"></td> 
+            </tr>
+            <tr>
+                <td>Billing Address: City:<input type="text" name="city" id="city" size="20"></td>
+            </tr>   
+            <tr>
+                <td>Billing Address: Zip Code:<input type="text" name="zip" id="zip" size="5"></td>
+            </tr>
+         
+            <tr>
+                <td><input type="radio" name="mybox" value="choice1"> American Express</td>
+            </tr>
+            <tr>                
+                <td><input type="radio" name="mybox" value="choice2"> Mastercard</td>
+            </tr>
+            <tr>                
+                <td><input type="radio" name="mybox" value="choice3"> Visa</td>
+            </tr>
+
+        <tr>
+        <td>Card Number:  <input type="text" name="number" id="number" size="20">
+        <select name="month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+
+        <select name="year">
+            
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            
+            
+            
+            
+           
+            
+            
+        </select></td>
+        </tr>
+
+        <tr>
+            <td>CVC#:  <input type="text" name="number" id="number" size="3"></td>
+        </tr>
+
+        <tr>
+            <td>Amount to donate:  <input type="text" name="number" id="z" size="6"></td>
+        </tr>
+            
+       <tr>
+           <td><textarea name="mybox" rows="10" cols="60" wrap>Is there anything you would like to share with the scholarship recipients?</textarea></td>
+        </tr>
+        <tr>
+        <td><input type="submit" value="Submit"><input type="Reset"></td>
+        </tr>   
+    </table>
+</form>
+<br>
+<footer style="background:#777; text-align: center; padding:5%;">
+    <p>Author: Janice Fore<br>
+        <a href="mailto:janice@example.com">Janice@example.com</a></p>
+    <p class="cp-text">
+        © Copyright 2021 Turning the Tide. All rights reserved.
+    </p>
+</footer>
+
+</body>
+</html>
